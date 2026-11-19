@@ -3,7 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fotoğraf Portfolyosu</title>
+<title>socalan portfolio ©SeDaT ÖCaLaN</title>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="description" content="Fotoğraf portfolyosu">
 <!--
   Bu dosyayı düzenlemene gerek yok.
@@ -150,6 +154,8 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
 
 <script>
 (function(){
+  // Tarayıcı sekmesinde görünen site başlığı
+  var SITE_TITLE = 'socalan portfolio ©SeDaT ÖCaLaN';
   var site = {}, projects = [];
   var app = document.getElementById('app');
 
@@ -189,7 +195,7 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
 
   function home(){
     setActive('work');
-    document.title = site.name || 'Portfolyo';
+    document.title = SITE_TITLE;
     app.innerHTML =
       '<section class="intro"><h1>'+esc(site.fullname || 'SeDaT ÖCaLaN')+'</h1><p>'+esc(site.tagline)+'</p></section>'+
       '<section class="grid">'+projects.map(card).join('')+'</section>';
@@ -200,7 +206,7 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
     var p = projects.find(function(x){return slugOf(x)===slug;});
     if(!p){ app.innerHTML='<div class="msg">Bu sayfa bulunamadı. <a href="#/">Ana sayfaya dön</a></div>'; return; }
     setActive('work');
-    document.title = p.title + ' — ' + (site.name||'');
+    document.title = SITE_TITLE + ' - ' + p.title;
     current = (p.photos||[]).filter(function(f){return f && f.image;});
     var others = projects.filter(function(x){return x!==p;}).slice(0,8);
     app.innerHTML =
@@ -217,7 +223,7 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
 
   function contact(){
     setActive('contact');
-    document.title = 'Contact — ' + (site.name||'');
+    document.title = SITE_TITLE + ' - Contact';
     app.innerHTML = '<section class="contact"><h1>Contact</h1>'+
       (site.about?'<p>'+esc(site.about)+'</p>':'')+
       (site.email?'<a class="mail" href="mailto:'+esc(site.email)+'">'+esc(site.email)+'</a>':'')+
