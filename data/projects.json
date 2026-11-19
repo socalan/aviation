@@ -3,7 +3,7 @@
     "title": "SHG Airshow 2026",
     "slug": "shg-airshow-2026",
     "subtitle": "Sivrihisar Havacılık Merkezi / Eskişehir / Türkiye",
-    "cover": "/images/SHG 2026/shg2026-1.jpg",
+    "cover": "/images/SHG 2026/shg2026cover.jpg",
     "photos": [
       {
         "image": "/images/SHG 2026/shg2026-1.jpg",
@@ -23,7 +23,7 @@
     "title": "Mt. Erciyes",
     "slug": "Erciyes",
     "subtitle": "Kayseri / Türkiye",
-    "cover": "/images/Mt. Erciyes/erciyes-1.jpg",
+    "cover": "/images/Mt. Erciyes/erciyescover.jpg",
     "photos": [
       {
         "image": "/images/Mt. Erciyes/erciyes-1.jpg"
@@ -34,7 +34,7 @@
     "title": "B&W",
     "slug": "black-and-white",
     "subtitle": "Black & White ",
-    "cover": "/images/BW/bw-1.jpg",
+    "cover": "/images/BW/bwcover.jpg",
     "photos": [
       {
         "image": "/images/BW/bw-1.jpg"
