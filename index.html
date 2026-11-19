@@ -14,20 +14,12 @@
   Site içeriği data/projects.json ve data/site.json dosyalarından okunur.
 -->
 <style>
+/* Renkler: siyah arka plan, açık renk yazı (her cihazda aynı) */
 :root{
-  --bg:#ffffff; --fg:#151515; --muted:#7a7a7a; --line:#e8e8e8; --hover:#000;
-  --lb-bg:rgba(255,255,255,.97);
+  --bg:#000000; --fg:#f2f2f2; --muted:#9a9a9a; --line:#222222; --hover:#fff;
+  --lb-bg:rgba(0,0,0,.97);
   --max:1440px; --gap:28px;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#111111; --fg:#ececec; --muted:#8d8d8d; --line:#262626; --hover:#fff;
-    --lb-bg:rgba(10,10,10,.97);
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#111111; --fg:#ececec; --muted:#8d8d8d; --line:#262626; --hover:#fff;
-  --lb-bg:rgba(10,10,10,.97);
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
