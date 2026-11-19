@@ -25,6 +25,14 @@ from urllib.parse import urlparse
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_TITLE = "socalan portfolio ©SeDaT ÖCaLaN"
 DEFAULT_FULLNAME = "SeDaT ÖCaLaN"
+# İsminin arama motorlarında aranabilecek farklı yazılışları
+NAME_VARIANTS = ["Sedat Öcalan", "Sedat Ocalan", "socalan"]
+# Eski Adobe Portfolio sitesindeki anahtar kelimeler (Google kullanmaz, Bing/Yandex az da olsa okur)
+KEYWORDS = ("socalan, Sedat Öcalan, Sedat Ocalan, photography, fotoğrafçılık, fotoğraf, aviation photography, "
+            "havacılık fotoğrafçılığı, spotter, airshow, SHG Airshow, Teknofest, THK Havacılık Festivali, "
+            "Türk Yıldızları, Solo Türk, landscape, manzara, astrophotography, Perseid, meteor shower, "
+            "stage photography, sahne fotoğrafçılığı, black and white, siyah beyaz, streetphotography, "
+            "sokak fotoğrafçılığı, Erciyes, Kapadokya, Cappadocia, Anıtkabir, ODTÜ, METU, İstanbul, Ankara, Türkiye, Turkey")
 
 
 def read(path):
@@ -122,13 +130,14 @@ def build():
                                         "<span>%s</span>" % e(p["subtitle"]) if p.get("subtitle") else "")
 
     same_as = [u for u in (site.get("instagram"), site.get("px500")) if u]
-    person = {"@type": "Person", "@id": url + "#person", "name": fullname, "alternateName": site.get("name") or "socalan",
+    person = {"@type": "Person", "@id": url + "#person", "name": fullname, "alternateName": NAME_VARIANTS,
               "jobTitle": "Photographer", "url": url, "sameAs": same_as,
               "address": {"@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR"}}
     if site.get("email"):
         person["email"] = "mailto:" + site["email"]
     default_image = abs_img(cover_of(projects[0])) if projects else ""
-    default_desc = " ".join(x for x in [fullname + " —", site.get("tagline"), site.get("about")] if x).strip()
+    parts = [str(x).strip().rstrip(".") for x in (site.get("tagline"), site.get("about")) if x]
+    default_desc = fullname + " — " + ". ".join(parts) + "." if parts else fullname
 
     def head(title, desc, canonical, image, og_type="website", jsonld=None, noindex=False):
         desc = re.sub(r"\s+", " ", desc or default_desc).strip()[:300]
@@ -137,6 +146,7 @@ def build():
             "<title>%s</title>" % e(title),
             '<meta name="description" content="%s">' % e(desc),
             '<meta name="author" content="%s">' % e(fullname),
+            '<meta name="keywords" content="%s">' % e(KEYWORDS),
         ]
         if noindex:
             h.append('<meta name="robots" content="noindex">')
