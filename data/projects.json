@@ -3,18 +3,18 @@
     "title": "SHG Airshow 2026",
     "slug": "shg-airshow-2026",
     "subtitle": "Sivrihisar Havacılık Merkezi / Eskişehir / Türkiye",
-    "cover": "/images/shg2026-1.jpg",
+    "cover": "/images/SHG 2026/shg2026-1.jpg",
     "photos": [
       {
-        "image": "/images/shg2026-1.jpg",
+        "image": "/images/SHG 2026/shg2026-1.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/shg2026-2.jpg",
+        "image": "/images/SHG 2026/shg2026-2.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/shg2026-3.jpg",
+        "image": "/images/SHG 2026/shg2026-3.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       }
     ]
@@ -23,10 +23,10 @@
     "title": "Mt. Erciyes",
     "slug": "Erciyes",
     "subtitle": "Kayseri / Türkiye",
-    "cover": "/images/erciyes-1.jpg",
+    "cover": "/images/Mt. Erciyes/erciyes-1.jpg",
     "photos": [
       {
-        "image": "/images/erciyes-1.jpg"
+        "image": "/images/Mt. Erciyes/erciyes-1.jpg"
       }
     ]
   },
@@ -34,10 +34,10 @@
     "title": "B&W",
     "slug": "black-and-white",
     "subtitle": "Black & White ",
-    "cover": "/images/bw-1.jpg",
+    "cover": "/images/BW/bw-1.jpg",
     "photos": [
       {
-        "image": "/images/bw-1.jpg"
+        "image": "/images/BW/bw-1.jpg"
       }
     ]
   },
