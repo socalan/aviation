@@ -21,18 +21,12 @@
   },
   {
     "title": "Mt. Erciyes",
-    "slug": "erciyes",
+    "slug": "Mt. Erciyes",
     "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
-    "cover": "/images/erciyes-1.jpg",
+    "cover": "/images/mt-erciyes1-copy.jpg",
     "photos": [
       {
-        "image": "/images/erciyes-1.jpg"
-      },
-      {
-        "image": "/images/erciyes-2.jpg"
-      },
-      {
-        "image": "/images/erciyes-3.jpg"
+        "image": "/images/mt-erciyes1-copy.jpg"
       }
     ]
   },
