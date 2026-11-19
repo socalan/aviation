@@ -45,8 +45,12 @@
     "title": "Uluslararası Anadolu Kartalı 2025",
     "slug": "Uluslararası Anadolu Kartalı 2025",
     "subtitle": "3. Ana Jet Üssü / Konya",
-    "cover": "/images/Anadolu Kartalı 2025/anadolu-kartali2.jpg",
+    "cover": "/images/Anadolu Kartalı 2025/anadolu-kartali0.jpg",
     "photos": [
+      {
+        "image": "/images/Anadolu Kartalı 2025/anadolu-kartali0.jpg",
+        "caption": "132. Hançer Filo // F-16D Block 40A (Turkish Air Force)"
+      },
       {
         "image": "/images/Anadolu Kartalı 2025/anadolu-kartali2.jpg",
         "caption": "192. Kaplan Filo // F-16C Block 50 (Turkish Air Force)"
@@ -54,9 +58,6 @@
       {
         "image": "/images/Anadolu Kartalı 2025/anadolu-kartali9.jpg",
         "caption": "132. Hançer Filo // F-16C Block 50 (Turkish Air Force)"
-      },
-      {
-        "image": "/images/sunset-3.jpg"
       }
     ]
   },
