@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://socalan.github.io/portfolio/</loc>
+    <loc>https://socalan.github.io/aviation/</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/contact/</loc>
+    <loc>https://socalan.github.io/aviation/contact/</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/shg-airshow-2026/</loc>
+    <loc>https://socalan.github.io/aviation/work/shg-airshow-2026/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/SHG 2026/shg2026-1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/SHG 2026/shg2026-2.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/SHG 2026/shg2026-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/SHG 2026/shg2026-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/SHG 2026/shg2026-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/SHG 2026/shg2026-3.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/erciyes/</loc>
+    <loc>https://socalan.github.io/aviation/work/erciyes/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/Mt. Erciyes/erciyes-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/Mt. Erciyes/erciyes-1.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/black-and-white/</loc>
+    <loc>https://socalan.github.io/aviation/work/black-and-white/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/BW/bw-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/BW/bw-1.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/uluslararasi-anadolu-kartali-2025/</loc>
+    <loc>https://socalan.github.io/aviation/work/uluslararasi-anadolu-kartali-2025/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/Anadolu Kartalı 2025/anadolu-kartali0.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/Anadolu Kartalı 2025/anadolu-kartali2.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/Anadolu Kartalı 2025/anadolu-kartali9.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/Anadolu Kartalı 2025/anadolu-kartali0.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/Anadolu Kartalı 2025/anadolu-kartali2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/Anadolu Kartalı 2025/anadolu-kartali9.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/kapadokya/</loc>
+    <loc>https://socalan.github.io/aviation/work/kapadokya/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/kapadokya-1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/kapadokya-2.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/kapadokya-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/kapadokya-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/kapadokya-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/kapadokya-3.jpg</image:loc></image:image>
   </url>
   <url>
-    <loc>https://socalan.github.io/portfolio/work/perseid-2026-meteor-shower/</loc>
+    <loc>https://socalan.github.io/aviation/work/perseid-2026-meteor-shower/</loc>
     <lastmod>2026-11-19</lastmod>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/perseid-1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/perseid-2.jpg</image:loc></image:image>
-    <image:image><image:loc>https://socalan.github.io/portfolio/images/perseid-3.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/perseid-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/perseid-2.jpg</image:loc></image:image>
+    <image:image><image:loc>https://socalan.github.io/aviation/images/perseid-3.jpg</image:loc></image:image>
   </url>
 </urlset>
