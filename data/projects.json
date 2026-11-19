@@ -21,7 +21,7 @@
   },
   {
     "title": "Mt. Erciyes",
-    "slug": "Mt. Erciyes",
+    "slug": "Erciyes",
     "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
     "cover": "/images/mt-erciyes1-copy.jpg",
     "photos": [
@@ -32,18 +32,12 @@
   },
   {
     "title": "B&W",
-    "slug": "bw",
-    "subtitle": "Siyah-beyaz seçkiler",
-    "cover": "/images/bw-1.jpg",
+    "slug": "black-and-white",
+    "subtitle": "Siyah-beyaz",
+    "cover": "/images/bandw1.jpg",
     "photos": [
       {
-        "image": "/images/bw-1.jpg"
-      },
-      {
-        "image": "/images/bw-2.jpg"
-      },
-      {
-        "image": "/images/bw-3.jpg"
+        "image": "/images/bandw1.jpg"
       }
     ]
   },
