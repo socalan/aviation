@@ -1,22 +1,5 @@
 [
   {
-    "title": "Mt. Erciyes",
-    "slug": "erciyes",
-    "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
-    "cover": "/images/erciyes-1.jpg",
-    "photos": [
-      {
-        "image": "/images/erciyes-1.jpg"
-      },
-      {
-        "image": "/images/erciyes-2.jpg"
-      },
-      {
-        "image": "/images/erciyes-3.jpg"
-      }
-    ]
-  },
-  {
     "title": "SHG Airshow 2026",
     "slug": "shg-airshow-2026",
     "subtitle": "SHM / 2026",
@@ -33,6 +16,23 @@
       {
         "image": "/images/shg20263.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
+      }
+    ]
+  },
+  {
+    "title": "Mt. Erciyes",
+    "slug": "erciyes",
+    "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
+    "cover": "/images/erciyes-1.jpg",
+    "photos": [
+      {
+        "image": "/images/erciyes-1.jpg"
+      },
+      {
+        "image": "/images/erciyes-2.jpg"
+      },
+      {
+        "image": "/images/erciyes-3.jpg"
       }
     ]
   },
