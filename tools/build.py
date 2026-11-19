@@ -23,16 +23,21 @@ from datetime import date
 from urllib.parse import urlparse
 
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE_TITLE = "socalan portfolio ©SeDaT ÖCaLaN"
+# ---------------- SİTE AYARLARI (bu siteye özel) ----------------
+# Tarayıcı sekmesinde ve Google'da görünen başlık
+SITE_TITLE = "socalan aviation ©SeDaT ÖCaLaN"
 DEFAULT_FULLNAME = "SeDaT ÖCaLaN"
+# Google'a "ben kimim" bilgisi
+JOB_TITLE = "Aviation photographer"
+ROLE = "aviation photographer and spotter based in Ankara, Türkiye"
 # İsminin arama motorlarında aranabilecek farklı yazılışları
 NAME_VARIANTS = ["Sedat Öcalan", "Sedat Ocalan", "socalan"]
-# Eski Adobe Portfolio sitesindeki anahtar kelimeler (Google kullanmaz, Bing/Yandex az da olsa okur)
-KEYWORDS = ("socalan, Sedat Öcalan, Sedat Ocalan, photography, fotoğrafçılık, fotoğraf, aviation photography, "
-            "havacılık fotoğrafçılığı, spotter, airshow, SHG Airshow, Teknofest, THK Havacılık Festivali, "
-            "Türk Yıldızları, Solo Türk, landscape, manzara, astrophotography, Perseid, meteor shower, "
-            "stage photography, sahne fotoğrafçılığı, black and white, siyah beyaz, streetphotography, "
-            "sokak fotoğrafçılığı, Erciyes, Kapadokya, Cappadocia, Anıtkabir, ODTÜ, METU, İstanbul, Ankara, Türkiye, Turkey")
+# Anahtar kelimeler (Google kullanmaz, Bing/Yandex az da olsa okur)
+KEYWORDS = ("socalan, Sedat Öcalan, Sedat Ocalan, aviation photography, havacılık fotoğrafçılığı, uçak fotoğrafı, "
+            "spotter, plane spotting, airshow, hava gösterisi, SHG Airshow, Sivrihisar, Teknofest, THK Havacılık Festivali, "
+            "Türk Yıldızları, Turkish Stars, Solo Türk, Anadolu Kartalı, Anatolian Eagle, F-16, F-4E Phantom, "
+            "Türk Hava Kuvvetleri, Turkish Air Force, aerobatics, akrobasi, Ankara, Eskişehir, Türkiye, Turkey")
+# -----------------------------------------------------------------
 
 
 def read(path):
@@ -131,7 +136,7 @@ def build():
 
     same_as = [u for u in (site.get("instagram"), site.get("px500")) if u]
     person = {"@type": "Person", "@id": url + "#person", "name": fullname, "alternateName": NAME_VARIANTS,
-              "jobTitle": "Photographer", "url": url, "sameAs": same_as,
+              "jobTitle": JOB_TITLE, "url": url, "sameAs": same_as,
               "address": {"@type": "PostalAddress", "addressLocality": "Ankara", "addressCountry": "TR"}}
     if site.get("email"):
         person["email"] = "mailto:" + site["email"]
@@ -173,7 +178,10 @@ def build():
 
     def page(root, page_id, head_html, content):
         out = template
-        for k, v in {"HEAD": head_html, "ROOT": root, "PAGE": page_id, "LOGO": e(site.get("name")),
+        other = ""
+        if site.get("other_url"):
+            other = '<a href="%s" data-nav="other">%s</a>' % (e(site["other_url"]), e(site.get("other_label") or "Other Works"))
+        for k, v in {"OTHER": other, "SITE_TITLE": SITE_TITLE.replace("\\", "\\\\").replace("'", "\\'"), "HEAD": head_html, "ROOT": root, "PAGE": page_id, "LOGO": e(site.get("name")),
                      "SOCIAL": social(), "FOOTER": e(site.get("footer")), "CONTENT": content}.items():
             out = out.replace("{{%s}}" % k, v)
         return out
@@ -199,7 +207,7 @@ def build():
         '<a class="mail" href="mailto:%s">%s</a>' % (e(site["email"]), e(site["email"])) if site.get("email") else "",
         social()))
     write("contact/index.html", page("../", "contact",
-                                     head(SITE_TITLE + " - Contact", "Contact %s, photographer based in Ankara, Türkiye. %s" % (fullname, site.get("about") or ""),
+                                     head(SITE_TITLE + " - Contact", "Contact %s, %s. %s" % (fullname, ROLE, site.get("about") or ""),
                                           url + "contact/", default_image,
                                           jsonld={"@context": "https://schema.org", "@type": "ContactPage", "url": url + "contact/", "mainEntity": person}),
                                      contact_content))
@@ -222,8 +230,8 @@ def build():
                 "<figcaption>%s</figcaption>" % e(f["caption"]) if f.get("caption") else "") for i, f in enumerate(photos)),
             '<section class="more"><h3>You may also like</h3><div class="grid">%s</div></section>' % "".join(card(x, root) for x in others) if others else ""))
         page_url = "%swork/%s/" % (url, slug)
-        desc = "%s%s — photography by %s, photographer based in Ankara, Türkiye." % (
-            p["title"], " (" + p["subtitle"] + ")" if p.get("subtitle") else "", fullname)
+        desc = "%s%s — photography by %s, %s." % (
+            p["title"], " (" + p["subtitle"] + ")" if p.get("subtitle") else "", fullname, ROLE)
         gallery = {"@context": "https://schema.org", "@type": "ImageGallery", "name": p["title"], "url": page_url,
                    "description": desc, "author": person, "isPartOf": {"@type": "WebSite", "url": url, "name": SITE_TITLE},
                    "image": [{"@type": "ImageObject", "contentUrl": abs_img(f["image"]), "name": alt_of(p, f, i),

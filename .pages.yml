@@ -54,3 +54,5 @@ content:
       - { name: instagram, label: Instagram adresi, type: string }
       - { name: px500, label: 500px adresi, type: string }
       - { name: footer, label: Alt bilgi yazısı, type: string }
+      - { name: other_label, label: Diğer site bağlantısının adı (ör. Other Works), type: string }
+      - { name: other_url, label: Diğer sitenin adresi (boş bırakırsan menüde görünmez), type: string }

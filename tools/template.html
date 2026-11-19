@@ -131,6 +131,7 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
     <nav class="main">
       <a href="{{ROOT}}" data-nav="work">My Works</a>
       <a href="{{ROOT}}contact/" data-nav="contact">Contact</a>
+      {{OTHER}}
     </nav>
     <span class="social" id="social-top">{{SOCIAL}}</span>
   </div>
@@ -156,7 +157,7 @@ footer.site button{background:none;border:0;color:inherit;font:inherit;cursor:po
 <script>
 (function(){
   // Tarayıcı sekmesinde görünen site başlığı
-  var SITE_TITLE = 'socalan portfolio ©SeDaT ÖCaLaN';
+  var SITE_TITLE = '{{SITE_TITLE}}';
   var ROOT = document.documentElement.getAttribute('data-root') || './';
   var PAGE = document.documentElement.getAttribute('data-page') || 'home';
   var site = {}, projects = [];
