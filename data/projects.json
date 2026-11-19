@@ -6,36 +6,33 @@
     "cover": "/images/erciyes-1.jpg",
     "photos": [
       {
-        "image": "/images/erciyes-1.jpg",
-        "caption": ""
+        "image": "/images/erciyes-1.jpg"
       },
       {
-        "image": "/images/erciyes-2.jpg",
-        "caption": ""
+        "image": "/images/erciyes-2.jpg"
       },
       {
-        "image": "/images/erciyes-3.jpg",
-        "caption": ""
+        "image": "/images/erciyes-3.jpg"
       }
     ]
   },
   {
     "title": "SHG Airshow 2026",
     "slug": "shg-airshow-2026",
-    "subtitle": "Ankara / Türkiye",
-    "cover": "/images/airshow-1.jpg",
+    "subtitle": "SHM / 2026",
+    "cover": "/images/shg20261.jpg",
     "photos": [
       {
-        "image": "/images/airshow-1.jpg",
-        "caption": ""
+        "image": "/images/shg20261.jpg",
+        "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/airshow-2.jpg",
-        "caption": ""
+        "image": "/images/shg20262.jpg",
+        "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/airshow-3.jpg",
-        "caption": ""
+        "image": "/images/shg20263.jpg",
+        "caption": "Yeni Menekşe - Acromach S2S"
       }
     ]
   },
@@ -46,16 +43,13 @@
     "cover": "/images/bw-1.jpg",
     "photos": [
       {
-        "image": "/images/bw-1.jpg",
-        "caption": ""
+        "image": "/images/bw-1.jpg"
       },
       {
-        "image": "/images/bw-2.jpg",
-        "caption": ""
+        "image": "/images/bw-2.jpg"
       },
       {
-        "image": "/images/bw-3.jpg",
-        "caption": ""
+        "image": "/images/bw-3.jpg"
       }
     ]
   },
@@ -66,16 +60,13 @@
     "cover": "/images/sunset-1.jpg",
     "photos": [
       {
-        "image": "/images/sunset-1.jpg",
-        "caption": ""
+        "image": "/images/sunset-1.jpg"
       },
       {
-        "image": "/images/sunset-2.jpg",
-        "caption": ""
+        "image": "/images/sunset-2.jpg"
       },
       {
-        "image": "/images/sunset-3.jpg",
-        "caption": ""
+        "image": "/images/sunset-3.jpg"
       }
     ]
   },
@@ -86,16 +77,13 @@
     "cover": "/images/kapadokya-1.jpg",
     "photos": [
       {
-        "image": "/images/kapadokya-1.jpg",
-        "caption": ""
+        "image": "/images/kapadokya-1.jpg"
       },
       {
-        "image": "/images/kapadokya-2.jpg",
-        "caption": ""
+        "image": "/images/kapadokya-2.jpg"
       },
       {
-        "image": "/images/kapadokya-3.jpg",
-        "caption": ""
+        "image": "/images/kapadokya-3.jpg"
       }
     ]
   },
@@ -106,16 +94,13 @@
     "cover": "/images/perseid-1.jpg",
     "photos": [
       {
-        "image": "/images/perseid-1.jpg",
-        "caption": ""
+        "image": "/images/perseid-1.jpg"
       },
       {
-        "image": "/images/perseid-2.jpg",
-        "caption": ""
+        "image": "/images/perseid-2.jpg"
       },
       {
-        "image": "/images/perseid-3.jpg",
-        "caption": ""
+        "image": "/images/perseid-3.jpg"
       }
     ]
   }
