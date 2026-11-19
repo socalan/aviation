@@ -47,6 +47,7 @@ content:
     format: json
     fields:
       - { name: name, label: Adın (logo yazısı), type: string }
+      - { name: fullname, label: Ana sayfa başlığı (ör. SeDaT ÖCaLaN), type: string }
       - { name: tagline, label: Ana sayfa kısa tanıtım, type: string }
       - { name: about, label: İletişim sayfası metni, type: text }
       - { name: email, label: E-posta, type: string }
