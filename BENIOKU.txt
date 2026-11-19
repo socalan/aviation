@@ -1,0 +1,12 @@
+SeDaT ÖCaLaN — Fotoğraf Portfolyosu
+====================================
+Bu klasör sitenin tamamıdır. Kod bilmene gerek yok.
+
+  index.html        -> Sitenin tasarımı (dokunma)
+  .pages.yml        -> Yönetim panelinin ayarları (dokunma)
+  data/projects.json -> Projeler/galeriler (panelden düzenlenir)
+  data/site.json     -> Adın, tanıtım yazısı, iletişim bilgileri (panelden düzenlenir)
+  images/            -> Fotoğraflar (panelden yüklenir)
+
+images klasöründeki örnek görseller geçicidir. Kendi fotoğraflarını yükledikten sonra silebilirsin.
+Kurulum adımları için "Portfolyo sitesi kurulum rehberi" belgesine bak.
