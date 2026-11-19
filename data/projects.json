@@ -3,18 +3,18 @@
     "title": "SHG Airshow 2026",
     "slug": "shg-airshow-2026",
     "subtitle": "SHM / 2026",
-    "cover": "/images/shg20261.jpg",
+    "cover": "/images/shg2026-1.jpg",
     "photos": [
       {
-        "image": "/images/shg20261.jpg",
+        "image": "/images/shg2026-1.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/shg20262.jpg",
+        "image": "/images/shg2026-2.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       },
       {
-        "image": "/images/shg20263.jpg",
+        "image": "/images/shg2026-3.jpg",
         "caption": "Yeni Menekşe - Acromach S2S"
       }
     ]
@@ -23,10 +23,10 @@
     "title": "Mt. Erciyes",
     "slug": "Erciyes",
     "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
-    "cover": "/images/mt-erciyes1-copy.jpg",
+    "cover": "/images/erciyes-1.jpg",
     "photos": [
       {
-        "image": "/images/mt-erciyes1-copy.jpg"
+        "image": "/images/erciyes-1.jpg"
       }
     ]
   },
@@ -34,10 +34,10 @@
     "title": "B&W",
     "slug": "black-and-white",
     "subtitle": "Siyah-beyaz",
-    "cover": "/images/bandw1.jpg",
+    "cover": "/images/bw-1.jpg",
     "photos": [
       {
-        "image": "/images/bandw1.jpg"
+        "image": "/images/bw-1.jpg"
       }
     ]
   },
