@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Mt. Erciyes",
+    "slug": "erciyes",
+    "subtitle": "Mt. Erciyes / Kayseri / Türkiye",
+    "cover": "/images/erciyes-1.jpg",
+    "photos": [
+      {
+        "image": "/images/erciyes-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/erciyes-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/erciyes-3.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "title": "SHG Airshow 2026",
+    "slug": "shg-airshow-2026",
+    "subtitle": "Ankara / Türkiye",
+    "cover": "/images/airshow-1.jpg",
+    "photos": [
+      {
+        "image": "/images/airshow-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/airshow-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/airshow-3.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "title": "B&W",
+    "slug": "bw",
+    "subtitle": "Siyah-beyaz seçkiler",
+    "cover": "/images/bw-1.jpg",
+    "photos": [
+      {
+        "image": "/images/bw-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/bw-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/bw-3.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "title": "Sunset",
+    "slug": "sunsets",
+    "subtitle": "Gün batımları",
+    "cover": "/images/sunset-1.jpg",
+    "photos": [
+      {
+        "image": "/images/sunset-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/sunset-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/sunset-3.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "title": "Kapadokya",
+    "slug": "kapadokya",
+    "subtitle": "Nevşehir / Türkiye",
+    "cover": "/images/kapadokya-1.jpg",
+    "photos": [
+      {
+        "image": "/images/kapadokya-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/kapadokya-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/kapadokya-3.jpg",
+        "caption": ""
+      }
+    ]
+  },
+  {
+    "title": "Perseid 2026 - Meteor Shower",
+    "slug": "perseid-2026-meteor-shower",
+    "subtitle": "Gece gökyüzü",
+    "cover": "/images/perseid-1.jpg",
+    "photos": [
+      {
+        "image": "/images/perseid-1.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/perseid-2.jpg",
+        "caption": ""
+      },
+      {
+        "image": "/images/perseid-3.jpg",
+        "caption": ""
+      }
+    ]
+  }
+]
