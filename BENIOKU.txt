@@ -2,7 +2,8 @@ SeDaT ÖCaLaN — Fotoğraf Portfolyosu
 ====================================
 Bu klasör sitenin tamamıdır. Kod bilmene gerek yok.
 
-  index.html        -> Sitenin tasarımı (dokunma)
+  tools/template.html -> Sitenin tasarımı (dokunma)
+  index.html, work/, contact/, sitemap.xml -> Otomatik üretilir (dokunma)
   .pages.yml        -> Yönetim panelinin ayarları (dokunma)
   data/projects.json -> Projeler/galeriler (panelden düzenlenir)
   data/site.json     -> Adın, tanıtım yazısı, iletişim bilgileri (panelden düzenlenir)

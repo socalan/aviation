@@ -1,0 +1,35 @@
+# Pages CMS'te bir şey kaydettiğinde sitenin sayfalarını (proje sayfaları,
+# sitemap.xml, robots.txt) otomatik olarak yeniden üretir.
+name: Sayfaları üret
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Sayfaları üret
+        run: python3 tools/build.py
+      - name: Değişiklik varsa kaydet
+        run: |
+          git add -A index.html 404.html contact work sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sayfaları otomatik üret"
+          git pull --rebase origin main
+          git push origin HEAD:main
